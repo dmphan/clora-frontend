@@ -5,7 +5,7 @@ import MultiSelect from './MultiSelect';
 
 
 class SearchForm extends Component {
-  
+
   static propTypes = {
     setCandidates: PropTypes.func
   }
@@ -63,7 +63,7 @@ class SearchForm extends Component {
       }
     })
       .then(response => this.props.setCandidates(response.data))
-      .catch(e => console.log(e));
+      .catch(e => alert(JSON.stringify(e.response.data)));
 
   }
 
