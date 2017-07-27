@@ -15,7 +15,9 @@ class App extends Component {
   }
   
   setCandidates(result) {
-    console.log(result);
+    if (result.length === 0 ){
+      alert("No candidates found");
+    }
     this.setState({ candidates: result });
   }
   
