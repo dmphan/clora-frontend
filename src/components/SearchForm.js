@@ -80,6 +80,7 @@ class SearchForm extends Component {
           <textarea
             value={this.state.experiences}
             className="form-control"
+            placeholder="List desired experience(s) comma-separated"
             name="experiences"
             id="experiencesForm"
             onChange={this.handleInputChange} />
